@@ -5,6 +5,7 @@
       <ul class="template_specifics">
         <li>Dossier styles [ global.scss | normalize.scss ]</li>
         <li>Nav component</li>
+        <li>Blobs</li>
       </ul>
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>
     <h3>Ecosystem</h3>
