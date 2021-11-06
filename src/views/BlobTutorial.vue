@@ -3,16 +3,16 @@
         <div class="informations">
             <article>
                 <h2>Default Blob</h2>
-                <p>The default blob only require 1 parameter, the name of the svg blob you want to show. The file must be in this path:</p>
+                <p>The default blob only requires 1 parameter, the name of the svg blob you want to show. The file must be in this path :</p>
                 <code class="prettyprint"> src/assets/svg/YOURFILE </code> 
-                <p>The code should look like that</p>
+                <p>The code should look like that :</p>
                 <code class="prettyprint">&lt;Blob src="blob.svg"/&gt;</code>
-                <p>Congrats ! you just made your first blob. This is as simple.</p>
+                <p>Congrats ! you just made your first blob. This is as simple as that.</p>
             </article>
-            <p>But now, I guess you wanna place it somewhere usefull, and change the size to make your background look nicer right ?</p>
+            <p>But now I guess you wanna place it somewhere usefull and change the size to make your background look nicer right ?</p>
             <article>
                 <h2>Size and placement</h2>
-                <p>To affect the size and the placement <b>of the blob</b> you can add the following attributes.</p>
+                <p>To affect the size and the placement <b>of the blob</b> you can add the following attributes :</p>
                 <code class="prettyprint">
                     &lt;Blob
                         src="blob.svg"
@@ -28,7 +28,7 @@
             <article>
                 <h2>Different positions</h2> 
                 <p>You may have noticited it but the whole component is in absolute position by default. to change that you want to add a position attribute.
-                Let's make the position in auto and change the size of the container. Let's also add the Cborder attribute to help us visualizing the container</p>
+                Let's make the position in "auto" and change the size of the container. Let's also add the Cborder attribute to help us visualize the container</p>
                 <code class="prettyprint">
                     &lt;Blob
                         position="auto" src="blob.svg"
@@ -43,7 +43,7 @@
                 width="100px" height="100px"
                 Cborder="1px"
                 />
-                <p>The container is a important concept to understand, the blob will not be visible outside of the container. This is interesting if you want to place the blob more precisely.
+                <p>The container is an important concept to understand, the blob will not be visible outside of the container. This is interesting if you want to place the blob more precisely.
                     If we change the size of the blob and keep the same size for the container, it will look like that :</p>
                 <code class="prettyprint">
                     &lt;Blob
@@ -59,12 +59,12 @@
                 width="200px" height="100px"
                 Cborder="1px"
                 />
-                <p>Note that to stretch without ratio your svg you need to add <code>preserveAspectRatio="none"</code> in your svg file.</p>
+                <p>Note that to stretch your svg without preserving the ratio you need to add <code>preserveAspectRatio="none"</code> in your svg file.</p>
 
                 <Blob
                 position="fixed" src="blob.svg"
                 />
-                <p>finally, if you want a background blob that stay fixed in the background even if you scroll (like in the top left corner) just use "fixed" in position.</p>
+                <p>finally, if you want a blob that stay fixed in the background when you scroll (like in the top left corner) just use "fixed" in position.</p>
                 <code class="prettyprint">
                     &lt;Blob
                         position="fixed" src="blob.svg"
