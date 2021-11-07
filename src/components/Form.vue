@@ -15,19 +15,22 @@ export default {
         var pwd=document.getElementById("pwd")
         var pwdcheck=document.getElementById("pwdcheck")
         var sub=document.querySelector("input[type='submit']")
-        sub.disabled = true
+        
         function check(){
             if(pwd.value!=pwdcheck.value){
                     pwd.classList.add("wrong")
                     pwd.classList.remove("ok")
                     pwdcheck.classList.add("wrong")
                     pwdcheck.classList.remove("ok")
+                    sub.disabled = true
+                    sub.classList.add("desactivated")
             }else{
                 pwd.classList.add("ok")
                 pwd.classList.remove("wrong")
                 pwdcheck.classList.add("ok")
                 pwdcheck.classList.remove("wrong")
                 sub.disabled = false
+                sub.classList.remove("desactivated")
 
             }
             if(pwd.value==""){
@@ -36,17 +39,25 @@ export default {
                 pwdcheck.classList.remove("wrong")
                 pwdcheck.classList.remove("ok")
                 sub.disabled = true
+                sub.classList.add("desactivated")
             }
         }
         
         if(pwd!=undefined && pwdcheck!=undefined ){
             console.log("pwd check in form enable")
+            sub.disabled = true
+            sub.classList.add("desactivated")
+            console.log("prevent user from submit with wrong pwd enable")
             pwd.addEventListener('input', () => {
                check()
             });
             pwdcheck.addEventListener('input', () => {
                check()
             });
+        }else{
+            console.log("pwd check in form disable")
+            console.log("prevent user from submit with wrong pwd disable")
+
         }
     }
 }
@@ -59,6 +70,10 @@ export default {
 .ok{
     border:2px solid green;
 }
+.desactivated{
+    opacity:.5;
+}
+
 
 form{
     display:flex;
@@ -76,23 +91,30 @@ form{
         width: 100%;
         padding:.3rem .5rem;
         margin: .3rem;
-        input{
+        input,select{
             margin: 0 .3rem;
         }
 
     }
-    input{
+    input,select{
         border:none;
         border-radius:6px;
         width: calc(100% - 1.6rem);
         padding:.3rem .5rem;
         margin:.3rem 0;
     }
+    select{
+        width:30%;
+    }
     input[type="submit"]{
         width: auto;
         padding:.5rem .8rem;
         background-color:$orange;
         color:$dark-blue;
+    }
+    input:focus,select:focus{
+        outline:none;
+        border-width: 3px;
     }
 }
     
