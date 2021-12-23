@@ -1,12 +1,13 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-      <h3>Ajouts</h3>
+      <h3>Added</h3>
       <ul class="template_specifics">
-        <li>Dossier styles [ global.scss | normalize.scss ]</li>
+        <li>styles file [ global.scss | normalize.scss ]</li>
         <li>Nav component</li>
         <li>Blobs</li>
         <li>Form</li>
+        <li>Axios (for API uses) <a href="https://www.codegrepper.com/code-examples/javascript/axios+with+vue+3">exemples</a></li>
       </ul>
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>
     <h3>Ecosystem</h3>
