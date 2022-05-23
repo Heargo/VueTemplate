@@ -8,7 +8,6 @@
       <div id="menu" v-show="menuActive">
         <router-link @click="closeNav" to="/">Home</router-link>
         <router-link @click="closeNav" to="/blob">Blob</router-link>
-        <router-link @click="closeNav" to="/form">Forms</router-link>
       </div>
         
   </div>

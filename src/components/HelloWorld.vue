@@ -1,16 +1,15 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-      <h3>Added</h3>
+      <h3>Custom</h3>
       <ul class="template_specifics">
         <li>styles file [ global.scss | normalize.scss ]</li>
         <li>Nav component</li>
         <li>Blobs</li>
-        <li>Form</li>
         <li>Axios (for API uses) <a href="https://www.codegrepper.com/code-examples/javascript/axios+with+vue+3">exemples</a></li>
       </ul>
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>
-    <h3>Ecosystem</h3>
+    <h3>Vanila Ecosystem</h3>
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
