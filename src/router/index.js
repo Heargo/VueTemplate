@@ -7,11 +7,11 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  {
-    path: '/blob',
-    name: 'Blob',
-    component: () => import('@/views/BlobTutorial.vue')
-  }
+  // {
+  //   path: '/url',
+  //   name: 'UrlName',
+  //   component: () => import('@/views/View.vue')
+  // }
 ]
 
 const router = createRouter({
