@@ -4,15 +4,12 @@
       <h3>Custom</h3>
       <ul class="template_specifics">
         <li>styles file [ global.scss | normalize.scss ]</li>
-        <li>Nav component</li>
-        <li>Blobs</li>
-        <li>Axios (for API uses) <a href="https://www.codegrepper.com/code-examples/javascript/axios+with+vue+3">exemples</a></li>
       </ul>
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>
-    <h3>Vanila Ecosystem</h3>
+    <h3>Ecosystem</h3>
     <ul>
+      <li><a href="https://www.codegrepper.com/code-examples/javascript/axios+with+vue+3">axios</a></li>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
+      <li><a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">pinia</a></li>
       <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
