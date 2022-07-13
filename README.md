@@ -1,4 +1,4 @@
-# template_vue
+# pwa
 
 ## Project setup
 ```
@@ -22,9 +22,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### Vulnerabilies
-vulnerabilities are not a problem because they are only for development build. For production build check with :
-```
-npm audit --only=prod
-```

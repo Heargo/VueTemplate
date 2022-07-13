@@ -1,9 +1,11 @@
-module.exports = {
-    css: {
-      loaderOptions: {
-        sass: {
-            prependData: `@import "@/styles/global.scss";`
-        }
-      }
-    }
-  };
+const { defineConfig } = require("@vue/cli-service");
+module.exports = defineConfig({
+  transpileDependencies: true,
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `@import "@/styles/global.scss";`,
+      },
+    },
+  },
+});
